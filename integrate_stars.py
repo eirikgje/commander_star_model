@@ -32,10 +32,13 @@ logg_norm = 2.0
 teff_norm = 9000
 points = []
 
-starfile = '/home/eirik/data/commander_star_model/crossmatch_commander_unique.csv'
+#starfile = '/home/eirik/data/commander_star_model/crossmatch_commander_unique.csv'
+starfile = '/mn/stornext/u3/eirikgje/data/commander_star_model/crossmatch_commander_unique.csv'
 url = 'https://www.astro.uni-jena.de/Users/theory/for2285-phoenix/'
-spectrum_dir = '/home/eirik/data/commander_star_model/phoenix_spectra/'
-outfile = '/home/eirik/data/commander_star_model/commander_star_model_debug.h5'
+#spectrum_dir = '/home/eirik/data/commander_star_model/phoenix_spectra/'
+spectrum_dir = '/mn/stornext/u3/eirikgje/data/commander_star_model/phoenix_spectra/'
+#outfile = '/home/eirik/data/commander_star_model/commander_star_model.h5'
+outfile = '/mn/stornext/u3/eirikgje/data/commander_star_model/commander_star_model.h5'
 
 coordinates_in_radians = True  # Otherwise, will be in degrees
 
@@ -264,7 +267,7 @@ coordinates = []
 param_vals = []
 reported_vals = []
 
-counter = 0
+#counter = 0
 with open(starfile, 'r') as source_file:
     source_file.readline()  # Skip the first line
     for source_line in source_file:
@@ -282,9 +285,9 @@ with open(starfile, 'r') as source_file:
         print(curr_reported_vals)
         print("Source processed")
         reported_vals.append(curr_reported_vals)
-        counter += 1
-        if counter == 20:
-            break
+#        counter += 1
+#        if counter == 10:
+#            break
 
 with h5py.File(outfile, 'w') as of:
     coordinates = np.array(coordinates)

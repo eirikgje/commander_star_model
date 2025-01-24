@@ -17,11 +17,11 @@ from scipy import interpolate
 
 
 DIRBE_SKYMAP_INFO = "/mn/stornext/d16/cmbco/ola/dirbe/auxdata/DIRBE_SKYMAP_INFO.FITS"
-#DIRBE_BANDPASSES = "/mn/stornext/d16/cmbco/ola/dirbe/auxdata/bandpass/DIRBE_SYSTEM_SPECTRAL_RESPONSE_TABLE.ASC"
-DIRBE_BANDPASSES = "/home/eirik/data/commander_star_model/DIRBE_SYSTEM_SPECTRAL_RESPONSE_TABLE.ASC"
+DIRBE_BANDPASSES = "/mn/stornext/d16/cmbco/ola/dirbe/auxdata/bandpass/DIRBE_SYSTEM_SPECTRAL_RESPONSE_TABLE.ASC"
+#DIRBE_BANDPASSES = "/home/eirik/data/commander_star_model/DIRBE_SYSTEM_SPECTRAL_RESPONSE_TABLE.ASC"
 DIRBE_BEAM = "/mn/stornext/d16/cmbco/ola/dirbe/auxdata/beams/DIRBE_BEAM_CHARACTERISTICS_P3B.ASC"
 DIRBE_POS_PATH = "/mn/stornext/d16/cmbco/ola/dirbe/auxdata/position/"
-BANDPASS_PATH = "/home/eirik/data/commander_star_model/bandpasses/"
+BANDPASS_PATH = "/mn/stornext/u3/eirikgje/data/commander_star_model/bandpasses/"
 DIRBE_POS_FILES = [
         "dmr_anc_spcl_89328_89356.txt",
         "dmr_anc_89356_90021.txt", 
